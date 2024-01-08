@@ -11,6 +11,7 @@ def str_xor(secret, key):
     return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
 ###############################################################################
 
+#You have to change this path 
 flag_enc = open('D:\\Download\\level5.flag.txt.enc', 'rb').read()
 correct_pw_hash = open('D:\\Download\\level5.hash.bin', 'rb').read()
 
@@ -24,7 +25,8 @@ def hash_pw(pw_str):
 
 
 def level_5_pw_check():
-    #user_pw = input("Please enter correct password for flag: ")
+    
+    #You have to change this path 
     passwords = open('D:\\Download\\dictionary.txt', 'rb')
     while True:
         
